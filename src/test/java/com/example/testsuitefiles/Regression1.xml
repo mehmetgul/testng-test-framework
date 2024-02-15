@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite 1">
+    <test name="Suite 1 Test1" preserve-order="true">
+        <classes>
+            <class name="com.example.FirstTestNgTest"/>
+            <class name="com.example.annotations.BeforeAndAfterMethodsClass"/>
+            <class name="com.example.assertions.HardAssertionsClass">
+                <methods>
+                    <exclude name="assertionTest"/>
+                </methods>
+            </class>
+            <class name="com.example.assertions.SoftAssertionsClass"/>
+        </classes>
+    </test>
+    <test name="Suite 1 Test2">
+        <classes>
+            <class name="com.example.FirstTestNgTest"/>
+        </classes>
+    </test>
+</suite>

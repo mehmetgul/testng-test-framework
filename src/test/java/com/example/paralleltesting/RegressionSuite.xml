@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression" parallel="classes" thread-count="5">
+    <test name="Regression Test" preserve-order="true">
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="com.example.paralleltesting.*"></package>
+            <package name="com.example.paralleltesting.pkg2.*"></package>
+            <package name="com.example.paralleltesting.pkg3.*"></package>
+        </packages>
+
+    </test>
+</suite>

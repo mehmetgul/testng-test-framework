@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite 2">
+    <test name="Suite 2 Test C" preserve-order="true">
+        <classes>
+            <class name="com.example.testsuitefiles.testclasses.TestClass3"/>
+        </classes>
+    </test>
+    <test name="Suite 1 Test D" preserve-order="true">
+        <classes>
+            <class name="com.example.testsuitefiles.testclasses.TestClass4"/>
+        </classes>
+    </test>
+    <test name="Suite 1 Test E" preserve-order="true">
+        <classes>
+            <class name="com.example.testsuitefiles.testclasses.TestClass5"/>
+        </classes>
+    </test>
+</suite>

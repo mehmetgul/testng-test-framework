@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite 1">
+    <parameter name="username" value="abc"/>
+    <parameter name="password" value="abc123"/>
+    <test name="Suite 1 Test1" preserve-order="true">
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.example.testngparameters.TestClass1"/>
+        </classes>
+    </test>
+
+</suite>
