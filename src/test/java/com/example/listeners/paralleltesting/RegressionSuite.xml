@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression" >
+    <listeners>
+<!--        <listener class-name="com.example.listeners.MyTestListener"/>-->
+<!--        <listener class-name="com.example.listeners.MyInvokedMethodClassListener"/>-->
+<!--        <listener class-name="com.example.listeners.ScreenShotListener"/>-->
+        <listener class-name="com.example.listeners.ScreenShotItestListener"/>
+
+
+    </listeners>
+    <test name="Regression Test" preserve-order="true">
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="com.example.listeners.paralleltesting.pkg1.*"/>
+        </packages>
+
+    </test>
+</suite>

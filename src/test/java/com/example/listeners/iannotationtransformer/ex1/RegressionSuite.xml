@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression">
+
+    <listeners>
+        <listener class-name="com.example.listeners.iannotationtransformer.ex1.ProductionCheckTransformer"/>
+    </listeners>
+
+    <test name="Regression Test" preserve-order="true">
+        <classes>
+            <class name="com.example.listeners.iannotationtransformer.ex1.MyTestTransformer"></class>
+        </classes>
+    </test>
+</suite>
