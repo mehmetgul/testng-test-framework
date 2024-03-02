@@ -1,6 +1,7 @@
-package com.example.listeners.paralleltesting.pkg1;
+package com.example.htmlreports.allurereports.pkg1;
 
 import com.example.Driver;
+import io.qameta.allure.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -8,6 +9,9 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import static io.qameta.allure.SeverityLevel.CRITICAL;
+
+@Feature("Ebay Search Assertion feature")
 public class HardAssertionsClass1 {
     @BeforeTest(alwaysRun = true)
     public void beforeTest() {
@@ -21,6 +25,12 @@ public class HardAssertionsClass1 {
     }
 
     @Test(groups = "regression")
+    @Story("Assertion testing for EBAY")
+    @Severity(CRITICAL)
+    @Owner("Mehmet")
+    @Link(name = "Website", url = "https://dev.example.com/")
+    @Issue("AUTH-124")
+    @TmsLink("TMS-457")
     public void testEbayAssertion() {
         try {
             Driver.getDriver().get("https://www.ebay.com/");
@@ -37,6 +47,13 @@ public class HardAssertionsClass1 {
     }
 
     @Test(groups = "regression")
+    @Story("Assertion testing")
+    @Description("This is for testing the hard assertion")
+    @Severity(CRITICAL)
+    @Owner("Mehmet")
+    @Link(name = "Website", url = "https://dev.example.com/")
+    @Issue("AUTH-123")
+    @TmsLink("TMS-456")
     public void assertionTest() {
         int a = 5;
         int b = 5;

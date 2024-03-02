@@ -1,5 +1,6 @@
 package com.example.listeners;
 
+import com.example.Driver;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.io.FileHandler;

@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression" >
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+        <listener class-name="com.example.htmlreports.allurereports.AllureTestListener"></listener>
+    </listeners>
+    <test name="Regression Test" preserve-order="true">
+        <packages>
+            <package name="com.example.htmlreports.allurereports.pkg1.*"/>
+        </packages>
+
+    </test>
+</suite>

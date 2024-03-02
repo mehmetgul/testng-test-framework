@@ -1,4 +1,4 @@
-package com.example.listeners.paralleltesting.pkg1;
+package com.example.htmlreports.extentreports.pkg1;
 
 import com.example.Driver;
 import org.openqa.selenium.By;

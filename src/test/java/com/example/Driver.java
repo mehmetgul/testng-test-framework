@@ -1,4 +1,4 @@
-package com.example.listeners;
+package com.example;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
