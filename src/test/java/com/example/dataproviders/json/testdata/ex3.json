@@ -1,0 +1,15 @@
+{
+  "policyNumber": "P123456",
+  "policyHolder": {
+    "name": "John Doe",
+    "age": 30,
+    "address": {
+      "street": "123 Elm Street",
+      "city": "Springfield",
+      "zipCode": "12345"
+    }
+  },
+  "premium": 1200.50,
+  "expiryDate": "2025-12-31"
+}
+

@@ -1,0 +1,16 @@
+{
+  "policyNumber": "P123456",
+  "policyHolder": "John Doe",
+  "claims": [
+    {
+      "claimNumber": "C123",
+      "amount": 5000,
+      "type": "Theft"
+    },
+    {
+      "claimNumber": "C124",
+      "amount": 2000,
+      "type": "Fire"
+    }
+  ]
+}
